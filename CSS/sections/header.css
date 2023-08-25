@@ -1,0 +1,83 @@
+.header__nav {
+  display: flex;
+  overflow: hidden;
+  background-color: #f2f2f2; /* Replace with the color you want */
+
+}
+
+.header__logo {
+  flex: 1;
+  display: flex;
+
+  position: relative;
+  padding: 20px;
+}
+
+.header__logo-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+
+  background-color: var(--color-white);
+  z-index: -1;
+}
+
+.header__logo h4 {
+  padding-left: 30px;
+
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.header__menu>ul, .header__menu, .header__menu-mobile {
+  padding: 20px;
+  flex: 1.236;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 64px;
+
+  font-weight: 500;
+  font-family: var(--plus-jakarta-sans);
+  color: var(--secondary-color);
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 20px;
+  cursor: pointer;
+
+  list-style: none;
+}
+
+.header__menu li {
+
+}
+
+.header__menu li img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.header__menu-mobile {
+  display: none;
+  gap: 20px;
+
+  position: relative;
+}
+
+.black-btn {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 175px;
+  border-radius: 10px;
+  background-color: #000;
+  box-shadow: inset;
+  color: #fff;
+  font-size: 26px;
+}
+

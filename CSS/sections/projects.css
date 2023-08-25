@@ -1,0 +1,143 @@
+.projects {
+  /* Set the container to flex display for centering */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+  background-color: #f2f2f2;
+  /* Add any other styling you need for the projects section */
+}
+
+.project-container {
+  /* Center the content horizontally and vertically */
+  display: flex;
+  flex-direction: column; /* Change to column to stack vertically */
+  align-items: center;
+  justify-content: center;
+  /* Add any other styling you need for the project container */
+}
+
+.projects h1 {
+  font-size: 66px;
+  font-family: var(--playfair-display);
+  font-weight: 600;
+  line-height: 78px;
+  color: #000;
+  text-align: center;
+  margin: 60px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  max-width: 900px;
+  margin-bottom: 70px;
+  border: 1px solid #000; /* Add black border */
+  background-color: #fff;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.project-app-image {
+  justify-content: center;
+}
+
+.project-screenshot {
+  position: absolute;
+  top: 0;
+  left: 40px; /* Adjust the left value as needed for overlap */
+  height: 300px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  z-index: 1; /* Place the screenshot behind the app icon */
+  margin-top: 30px
+}
+
+.project-appicon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 2; /* Place the app icon in front */
+
+}
+
+.project-left {
+  justify-content: center;
+  position: relative; /* Set the container to relative positioning */
+  width: calc(33.33vw);
+  height: 350px;
+}
+
+.project-right {
+  width: calc(66.67vw);
+}
+
+.project-right h2 {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.project-right p {
+  margin-top: 5px;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.project-icons {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+  display: flex; /* Use flex display */
+}
+
+.project-icons img {
+  max-height: 50px;
+}
+
+.icon-outline {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 13px;
+  padding: 5px;
+  display: flex; /* Use flex display */
+  align-items: center; /* Vertically center items */
+  justify-content: center; /* Horizontally center items */
+  margin: 5px;
+}
+
+.icon-outline img {
+  max-height: 40px;
+}
+
+.github-button {
+  display: flex; /* Use flex display to arrange elements side by side */
+  align-items: center; /* Vertically center the content */
+  background-color: #000;
+  color: black;
+  border: 2px solid black;
+  margin-top: 10px;
+  padding: 5px 20px; /* Adjust padding */
+  border-radius: 10px;
+  cursor: pointer;
+  max-width: 300px;
+}
+
+.github-button p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  white-space: nowrap; /* Prevent the text from wrapping to a new line */
+  overflow: hidden; /* Hide any overflowed text */
+  text-overflow: ellipsis; /* Add an ellipsis (...) if the text overflows */
+}
+
+.github-button img {
+  height: 32px;
+}
