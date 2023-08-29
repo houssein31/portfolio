@@ -1,100 +1,109 @@
+/* Set up the styling for the projects section */
 .projects {
-  /* Set the container to flex display for centering */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  padding: 80px 0;
   background-color: #f2f2f2;
-  /* Add any other styling you need for the projects section */
 }
 
+/* Style the container for individual projects */
 .project-container {
-  /* Center the content horizontally and vertically */
   display: flex;
-  flex-direction: column; /* Change to column to stack vertically */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  /* Add any other styling you need for the project container */
 }
 
+/* Style the heading for the projects section */
 .projects h1 {
-  font-size: 66px;
-  font-family: var(--playfair-display);
+  font-size: 48px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
-  line-height: 78px;
   color: #000;
   text-align: center;
-  margin: 60px;
+  margin: 40px 0;
 }
 
+/* Style individual project boxes */
 .project {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   max-width: 900px;
   margin-bottom: 70px;
-  border: 1px solid #000; /* Add black border */
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   background-color: #fff;
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding: 50px;
 }
 
+/* Style the app image and screenshot container */
 .project-app-image {
+  display: flex;
   justify-content: center;
+  position: relative;
 }
 
+/* Style the screenshot within the app image container */
 .project-screenshot {
-  position: absolute;
-  top: 0;
-  left: 40px; /* Adjust the left value as needed for overlap */
-  height: 300px;
+  height: auto;
+  width: 150px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
-  z-index: 1; /* Place the screenshot behind the app icon */
-  margin-top: 30px
+  z-index: 1;
+  margin-left: 20px;
+}
+
+/* Style the app icon within the app image container */
+.project-appicon {
+  width: 80px;
+  height: 80px;
+}
+
+/* Style the right side of the project box */
+.project-right {
+  flex: 1;
+  margin-left: 30px;
+}
+
+/* Style the project title */
+.project-right h2 {
+  font-size: 28px;
+  margin-top: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Style the project description */
+.project-right p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* Style the icons section for each project */
+.project-icons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-outline img {
+  height: 40px;
+}
+
+/* Style the icons within the icons section */
+.project-icons img {
+  max-height: 40px;
+  margin: 0 10px;
 }
 
 .project-appicon {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 80px;
   height: 80px;
-  z-index: 2; /* Place the app icon in front */
-
-}
-
-.project-left {
-  justify-content: center;
-  position: relative; /* Set the container to relative positioning */
-  width: calc(33.33vw);
-  height: 350px;
-}
-
-.project-right {
-  width: calc(66.67vw);
-}
-
-.project-right h2 {
-  font-size: 36px;
-  margin-top: 20px;
-}
-
-.project-right p {
-  margin-top: 5px;
-  margin-right: 15px;
-  font-size: 20px;
-}
-
-.project-icons {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  align-items: center;
-  display: flex; /* Use flex display */
-}
-
-.project-icons img {
-  max-height: 50px;
+  z-index: 2;
 }
 
 .icon-outline {
@@ -103,9 +112,9 @@
   border: 2px solid #000;
   border-radius: 13px;
   padding: 5px;
-  display: flex; /* Use flex display */
-  align-items: center; /* Vertically center items */
-  justify-content: center; /* Horizontally center items */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 5px;
 }
 
@@ -113,31 +122,50 @@
   max-height: 40px;
 }
 
-.github-button {
-  display: flex; /* Use flex display to arrange elements side by side */
-  align-items: center; /* Vertically center the content */
-  background-color: #000;
-  color: black;
-  border: 2px solid black;
-  margin-top: 10px;
-  padding: 5px 20px; /* Adjust padding */
-  border-radius: 10px;
-  cursor: pointer;
-  max-width: 300px;
+.project-icons {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  align-items: center;
+  display: flex;
 }
 
+.project-icons img {
+  max-height: 50px;
+}
+
+/* Style the GitHub button */
+.github-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Add hover effect to the GitHub button */
+.github-button:hover {
+  background-color: #333;
+}
+
+/* Style the text within the GitHub button */
 .github-button p {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  color: #fff;
-  font-size: 20px;
-  margin-right: 10px;
-  white-space: nowrap; /* Prevent the text from wrapping to a new line */
-  overflow: hidden; /* Hide any overflowed text */
-  text-overflow: ellipsis; /* Add an ellipsis (...) if the text overflows */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+/* Style the GitHub icon within the button */
 .github-button img {
-  height: 32px;
+  height: 24px;
+  margin-left: 10px;
+  filter: invert(100%);
 }

@@ -1,6 +1,7 @@
-/* .about {
+.about {
+  padding: 80px 0;
   background-color: #f2f2f2;
-} */
+}
 
 .about h1 {
   font-size: 66px;
@@ -16,6 +17,7 @@
   text-align: center;
   max-width: 900px;
   margin: 0 auto;
+  margin-bottom: 100px;
   font-size: 30px;
   font-family: var(--code-font);
 }
@@ -23,7 +25,8 @@
 .about__content-languages h2 {
   padding-top: 80px;
   font-size: 66px;
-  font-family: var(--playfair-display);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   line-height: 78px;
   color: #000;
@@ -32,13 +35,23 @@
 
 .about__content-languages_icons {
   justify-content: center;
+  align-items: center;
   display: grid;
-  grid-template-rows: 250px  250px;
-  grid-template-columns: 250px  250px 250px 250px;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 250px 250px 250px 250px;
   padding-top: 45px;
+  margin-bottom: 100px;
 }
 
-.java-section .java-center-content {
+.skill-center-content {
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 20px;
+  padding: 15px;
+}
+
+.skill-section .skill-center-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,116 +60,22 @@
   text-align: center;
 }
 
-.java-section img {
+.skill-section img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 0px; /* Reduced margin below the image */
+  margin-top: 15px; /* Reduced margin below the image */
 }
 
-.java-section p {
-    margin: 0;
-    padding: 0;
-}
-
-.javascript-section .javascript-center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.javascript-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.javascript-section p {
-  margin: 0;
-  padding: 0;
-}
-
-.html-section .html-center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.html-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.html-section p {
-  margin: 0;
-  padding: 0;
-}
-
-.css-section .css-center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.css-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.css-section p {
-  margin: 0;
-  padding: 0;
-}
-
-.spring-section .spring-center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.spring-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.spring-section p {
-  margin: 0;
-  padding: 0;
-}
-
-.react-section .react-center-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.react-section img {
-  max-width: 100%;
-  height: auto;
-}
-
-.react-section p {
-  margin: 0;
+.skill-section p {
+  margin-bottom: 15px;
   padding: 0;
 }
 
 .about__content-certifications h2 {
   padding-top: 80px;
   font-size: 66px;
-  font-family: var(--playfair-display);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 600;
   line-height: 78px;
   color: #000;
@@ -165,13 +84,23 @@
 
 .about__content-certifications_icons {
   justify-content: center;
+  align-items: center;
   display: grid;
-  grid-template-rows: 250px  250px;
-  grid-template-columns: 500px  500px;
+  grid-template-rows: 250px 250px;
+  grid-template-columns: 500px 500px;
   padding-top: 45px;
+  margin-bottom: 80px;
 }
 
-.oracle-section .oracle-center-content {
+.cert-center-content {
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 20px;
+  padding: 15px;
+}
+
+.cert-section .cert-center-content {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -180,212 +109,66 @@
   text-align: center;
 }
 
-.oracle-section img {
-  max-width: 150px; /* Set the maximum width to 150px */
+.cert-section-image {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 130px; /* Set the maximum width to 150px */
   height: auto; /* Let the height adjust automatically to maintain aspect ratio */
   margin-bottom: 0; /* Reduced margin below the image */
 }
 
-.oracle-text {
+.cert-text {
   text-align: left; /* Align all text elements to the left */
   padding-left: 15px;
 }
 
-.oracle-text h3 {
-  font-size: 25px;
+.cert-text h3 {
+  font-size: 23px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.oracle-text p {
+.cert-text p {
   font-size: 20px;
   margin: 0;
   padding: 0;
   text-align: left; /* Add this line to align text to the left */
-
 }
 
-.oracle-view-badge-button {
-  display: flex; /* Use flex display to arrange elements side by side */
-  align-items: center; /* Vertically center the content */
-  background-color: white;
-  color: black;
+.cert-view-badge-button {
+  display: flex; /* Use flex display to center content vertically */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #1b1b1b;
+  height: 100%; /* Set the height to 100% of the container */
   border: 2px solid black;
-  margin-top: 10px;
-  padding: 5px 20px; /* Adjust padding */
-  border-radius: 10px;
+  margin-top: 40px;
+  padding: 3px 10px; /* Adjust padding */
+  border-radius: 15px;
   cursor: pointer;
 }
 
-.oracle-view-badge-button p {
+.cert-view-badge-content {
+  display: contents; /* Use flex display for side-by-side elements */
+  align-items: center; /* Center content vertically */
+}
+
+.cert-view-badge-content p {
   margin: 0;
   padding: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 20px;
+  color: #fff;
   margin-right: 10px;
   white-space: nowrap; /* Prevent the text from wrapping to a new line */
   overflow: hidden; /* Hide any overflowed text */
   text-overflow: ellipsis; /* Add an ellipsis (...) if the text overflows */
 }
 
-.oracle-view-badge-button img {
-  min-height: 22px;
-  max-height: 100%;
+.cert-view-badge-content img {
+  max-width: 50px;
+  margin: 0; /* Reset margin specifically for the image */
 }
-
-.comptia-section .comptia-center-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.comptia-section img {
-  max-width: 150px; /* Set the maximum width to 150px */
-  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-  margin-bottom: 0; /* Reduced margin below the image */
-}
-
-.comptia-text {
-  text-align: left; /* Align all text elements to the left */
-  padding-left: 15px;
-}
-
-.comptia-text h3 {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-.comptia-text p {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  text-align: left; /* Add this line to align text to the left */
-
-}
-
-.comptia-view-badge-button {
-  display: inline-block;
-  background-color: white; /* White background color */
-  color: black; /* Black text color */
-  border: 2px solid black; /* Black border */
-  margin-top: 10px;
-  padding: 5px 40px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.comptia-view-badge-button p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px; /* Set font size to 20px */
-}
-
-.itil-section .itil-center-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.itil-section img {
-  max-width: 150px; /* Set the maximum width to 150px */
-  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-  margin-bottom: 0; /* Reduced margin below the image */
-}
-
-.itil-text {
-  text-align: left; /* Align all text elements to the left */
-  padding-left: 15px;
-}
-
-.itil-text h3 {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-.itil-text p {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  text-align: left; /* Add this line to align text to the left */
-
-}
-
-.itil-view-badge-button {
-  display: inline-block;
-  background-color: white; /* White background color */
-  color: black; /* Black text color */
-  border: 2px solid black; /* Black border */
-  margin-top: 10px;
-  padding: 5px 40px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.itil-view-badge-button p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px; /* Set font size to 20px */
-}
-
-.aws-section .aws-center-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  text-align: center;
-}
-
-.aws-section img {
-  max-width: 150px; /* Set the maximum width to 150px */
-  height: auto; /* Let the height adjust automatically to maintain aspect ratio */
-  margin-bottom: 0; /* Reduced margin below the image */
-}
-
-.aws-text {
-  text-align: left; /* Align all text elements to the left */
-  padding-left: 15px;
-}
-
-.aws-text h3 {
-  font-size: 25px;
-  margin: 0;
-  padding: 0;
-}
-
-.aws-text p {
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  text-align: left; /* Add this line to align text to the left */
-
-}
-
-.aws-view-badge-button {
-  display: inline-block;
-  background-color: white; /* White background color */
-  color: black; /* Black text color */
-  border: 2px solid black; /* Black border */
-  margin-top: 10px;
-  padding: 5px 40px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.aws-view-badge-button p {
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 20px; /* Set font size to 20px */
-}
-

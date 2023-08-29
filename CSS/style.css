@@ -12,7 +12,9 @@
 :root {
   --playfair-display: "Playfair Display", serif;
   --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
-  --code-font: 'Consolas', monospace;
+  --code-font: "Consolas", monospace;
+  --contrast-font1: "Playfair Display", serif; /* Contrasting sans-serif font */
+  --code-font-roboto: "Roboto Mono", monospace;
 
   --primary-color: #121212;
   --secondary-color: #121212;
@@ -44,7 +46,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 
 .flex-center {
   display: flex;
@@ -106,7 +107,6 @@ a {
 
 /* START: about us media queries */
 @media screen and (max-width: 1024px) {
-
   .about-us {
     flex-direction: column;
   }
@@ -126,7 +126,6 @@ a {
 }
 
 @media screen and (max-width: 750px) {
-
   .about-us__image {
     flex-direction: column;
   }
@@ -143,9 +142,6 @@ a {
 }
 
 @media screen and (max-width: 550px) {
-
-
-
   .about-us__image-sushi2 img,
   .about-us__image-sushi3 img {
     width: 50%;
@@ -168,11 +164,9 @@ a {
 }
 /* END: about us media queries */
 
-
 /* START: header media querie */
 @media screen and (max-width: 900px) {
-
-  .header__logo>h4 {
+  .header__logo > h4 {
     color: #fff;
   }
 
